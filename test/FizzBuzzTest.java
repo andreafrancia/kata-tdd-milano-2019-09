@@ -1,9 +1,15 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
 
-    private final FizzBuzzer fizzBuzzer = new FizzBuzzer();
+    private FizzBuzzer fizzBuzzer;
+
+    @Before
+    public void setUp() {
+        fizzBuzzer = new FizzBuzzer();
+    }
 
     @Test
     public void shouldReturnFizzWhenInputIsEqual3() {
