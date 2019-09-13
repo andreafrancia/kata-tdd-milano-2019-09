@@ -37,7 +37,7 @@ public class FizzBuzzTest {
             return "fizz";
         }
 
-        if (i == 5) {
+        if ((i % 5) == 0) {
             return "buzz";
         }
 
