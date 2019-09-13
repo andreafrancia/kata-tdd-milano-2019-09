@@ -29,15 +29,17 @@ public class FizzBuzzTest {
     }
 
     private String say(int i) {
+        if (i == 15) {
+            return "fizzbuzz";
+        }
+
         if (i == 3) {
             return "fizz";
         }
         if (i == 5) {
             return "buzz";
         }
-        if (i == 15) {
-            return "fizzbuzz";
-        }
+
         return Integer.toString(i);
     }
 }
