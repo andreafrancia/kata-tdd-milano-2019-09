@@ -14,6 +14,10 @@ public class FizzBuzzTest {
     }
 
     private String say(int i) {
-        return "fizz";
+        if (i == 3) {
+            return "fizz";
+        }
+
+        return "";
     }
 }
