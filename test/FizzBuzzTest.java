@@ -29,18 +29,20 @@ public class FizzBuzzTest {
     }
 
     private String say(int i) {
-        if (i == 15) {
-            return "fizzbuzz";
-        }
+        String result = "";
 
         if ((i % 3)==0) {
-            return "fizz";
+            result += "fizz";
         }
 
         if ((i % 5) == 0) {
-            return "buzz";
+            result += "buzz";
         }
 
-        return Integer.toString(i);
+        if (result.equals("")) {
+            return Integer.toString(i);
+        }
+
+        return result;
     }
 }
