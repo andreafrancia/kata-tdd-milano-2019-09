@@ -38,7 +38,10 @@ public class FizzBuzzTest {
         Assert.assertEquals("buzz", say(10));
     }
 
-
+    @Test
+    public void shouldReturnBuzzWhenInputIsEqualTo7() {
+        Assert.assertEquals("bang", say(7));
+    }
 
     private String say(int i) {
         String result = "";
