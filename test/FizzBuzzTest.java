@@ -3,65 +3,50 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+    private final FizzBuzzer fizzBuzzer = new FizzBuzzer();
+
     @Test
     public void shouldReturnFizzWhenInputIsEqual3() {
-        Assert.assertEquals("fizz", say(3));
+        Assert.assertEquals("fizz", fizzBuzzer.say(3));
     }
 
     @Test
     public void shouldReturnBuzzWhenInputIsEqualTo5() {
-        Assert.assertEquals("buzz", say(5));
+        Assert.assertEquals("buzz", fizzBuzzer.say(5));
     }
 
     @Test
     public void shouldReturn1WhenInputIsEqualTo1() {
-        Assert.assertEquals("1", say(1));
+        Assert.assertEquals("1", fizzBuzzer.say(1));
     }
 
     @Test
     public void shouldReturn1WhenInputIsEqualTo4() {
-        Assert.assertEquals("4", say(4));
+        Assert.assertEquals("4", fizzBuzzer.say(4));
     }
 
     @Test
     public void shoudReturnFizzBuzzWhenInputIsEqualTo15() {
-        Assert.assertEquals("fizzbuzz", say(15));
+        Assert.assertEquals("fizzbuzz", fizzBuzzer.say(15));
     }
 
     @Test
     public void shouldReturnFizzWhenInputIsEqualTo6() {
-        Assert.assertEquals("fizz", say(6));
+        Assert.assertEquals("fizz", fizzBuzzer.say(6));
     }
 
     @Test
     public void shouldReturnBuzzWhenInputIsEqualTo10() {
-        Assert.assertEquals("buzz", say(10));
+        Assert.assertEquals("buzz", fizzBuzzer.say(10));
     }
 
     @Test
     public void shouldReturnBuzzWhenInputIsEqualTo7() {
-        Assert.assertEquals("bang", say(7));
+        Assert.assertEquals("bang", fizzBuzzer.say(7));
     }
 
     private String say(int i) {
-        String result = "";
 
-        if ((i % 3) == 0) {
-            result += "fizz";
-        }
-
-        if ((i % 5) == 0) {
-            result += "buzz";
-        }
-
-        if ((i % 7) == 0) {
-            result += "bang";
-        }
-
-        if (result.equals("")) {
-            return Integer.toString(i);
-        }
-
-        return result;
+        return fizzBuzzer.say(i);
     }
 }
