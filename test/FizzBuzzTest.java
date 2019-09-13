@@ -25,7 +25,7 @@ public class FizzBuzzTest {
 
     @Test
     public void shoudReturnFizzBuzzWhenInputIsEqualTo15() {
-        Assert.assertEquals("fizzbuzz",say(15));
+        Assert.assertEquals("fizzbuzz", say(15));
     }
 
     @Test
@@ -33,10 +33,15 @@ public class FizzBuzzTest {
         Assert.assertEquals("fizz", say(6));
     }
 
+    @Test
+    public void shouldReturnBuzzWhenInputIsEqualTo10() {
+        Assert.assertEquals("buzz", say(10));
+    }
+
     private String say(int i) {
         String result = "";
 
-        if ((i % 3)==0) {
+        if ((i % 3) == 0) {
             result += "fizz";
         }
 
