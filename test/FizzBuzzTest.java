@@ -18,6 +18,11 @@ public class FizzBuzzTest {
         Assert.assertEquals("1", say(1));
     }
 
+    @Test
+    public void shouldReturn1WhenInputIsEqualTo4() {
+        Assert.assertEquals("4", say(4));
+    }
+
     private String say(int i) {
         if (i == 3) {
             return "fizz";
