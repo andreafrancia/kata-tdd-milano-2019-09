@@ -116,11 +116,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzzTest.something" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FizzBuzzTest.shouldReturnFizzWhenInputIsEqual3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kata-tdd-milano-2019-09" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FizzBuzzTest" />
-      <option name="METHOD_NAME" value="something" />
+      <option name="METHOD_NAME" value="shouldReturnFizzWhenInputIsEqual3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,7 +129,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FizzBuzzTest" />
-        <item itemvalue="JUnit.FizzBuzzTest.something" />
+        <item itemvalue="JUnit.FizzBuzzTest.shouldReturnFizzWhenInputIsEqual3" />
         <item itemvalue="JUnit.All in kata-tdd-milano-2019-09" />
       </list>
     </recent_temporary>

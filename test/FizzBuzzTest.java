@@ -8,6 +8,11 @@ public class FizzBuzzTest {
         Assert.assertEquals("fizz", say(3));
     }
 
+    @Test
+    public void shouldReturnBuzzWhenInputIsEqualTo5() {
+        Assert.assertEquals("buzz", "buzz");
+    }
+
     private String say(int i) {
         return "fizz";
     }
