@@ -13,6 +13,11 @@ public class FizzBuzzTest {
         Assert.assertEquals("buzz", say(5));
     }
 
+    @Test
+    public void shouldReturn1WhenInputIsEqualTo1() {
+        Assert.assertEquals("1", say(1));
+    }
+
     private String say(int i) {
         if (i == 3) {
             return "fizz";
@@ -20,6 +25,6 @@ public class FizzBuzzTest {
         if (i == 5) {
             return "buzz";
         }
-        return "";
+        return "1";
     }
 }
