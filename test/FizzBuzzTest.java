@@ -38,6 +38,8 @@ public class FizzBuzzTest {
         Assert.assertEquals("buzz", say(10));
     }
 
+
+
     private String say(int i) {
         String result = "";
 
@@ -47,6 +49,10 @@ public class FizzBuzzTest {
 
         if ((i % 5) == 0) {
             result += "buzz";
+        }
+
+        if ((i % 7) == 0) {
+            result += "bang";
         }
 
         if (result.equals("")) {
