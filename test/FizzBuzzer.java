@@ -28,7 +28,9 @@ public class FizzBuzzer {
         }
 
         if (this.parola != null) {
-
+            if ((i % num) == 0) {
+                result += parola;
+            }
         }
 
         if (result.equals("")) {
