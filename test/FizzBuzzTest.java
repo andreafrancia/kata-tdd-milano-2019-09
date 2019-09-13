@@ -28,6 +28,11 @@ public class FizzBuzzTest {
         Assert.assertEquals("fizzbuzz",say(15));
     }
 
+    @Test
+    public void shouldReturnFizzWhenInputIsEqualTo6() {
+        Assert.assertEquals("fizz", say(6));
+    }
+
     private String say(int i) {
         String result = "";
 
