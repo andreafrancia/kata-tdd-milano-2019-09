@@ -23,12 +23,20 @@ public class FizzBuzzTest {
         Assert.assertEquals("4", say(4));
     }
 
+    @Test
+    public void shoudReturnFizzBuzzWhenInputIsEqualTo15() {
+        Assert.assertEquals("fizzbuzz",say(15));
+    }
+
     private String say(int i) {
         if (i == 3) {
             return "fizz";
         }
         if (i == 5) {
             return "buzz";
+        }
+        if (i == 15) {
+            return "fizzbuzz";
         }
         return Integer.toString(i);
     }
