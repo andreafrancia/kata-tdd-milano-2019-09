@@ -5,6 +5,10 @@ public class FizzBuzzTest {
 
     @Test
     public void something() {
+        say(3);
+    }
 
+    private String say(int i) {
+        return "fizz";
     }
 }
