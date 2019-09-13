@@ -4,7 +4,7 @@ import org.junit.Test;
 public class FizzBuzzTest {
 
     @Test
-    public void something() {
+    public void shouldReturnFizzWhenInputIsEqual3() {
         Assert.assertEquals("fizz", say(3));
     }
 
