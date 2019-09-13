@@ -51,6 +51,14 @@ public class FizzBuzzTest {
         Assert.assertEquals("bang", fizzBuzzer.say(7));
     }
 
+    @Test
+    public void shouldReturnWordWhenInputIsEqualToNum() {
+        int n = 11;
+        String word = "pippo";
+        fizzBuzzer = new FizzBuzzer(n, word);
+        Assert.assertEquals(word, fizzBuzzer.say(n));
+    }
+
     private String say(int i) {
 
         return fizzBuzzer.say(i);
