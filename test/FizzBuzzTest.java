@@ -25,6 +25,6 @@ public class FizzBuzzTest {
         if (i == 5) {
             return "buzz";
         }
-        return Integer.toString(1);
+        return Integer.toString(i);
     }
 }
