@@ -27,6 +27,10 @@ public class FizzBuzzer {
             result += "bang";
         }
 
+        if (this.parola != null) {
+
+        }
+
         if (result.equals("")) {
             return Integer.toString(i);
         }
