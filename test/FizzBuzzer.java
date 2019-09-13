@@ -1,5 +1,15 @@
 public class FizzBuzzer {
+
+    private String parola;
+
+    private int num;
+
     public FizzBuzzer() {
+    }
+
+    public FizzBuzzer(int i, String parola) {
+        this.num=i;
+        this.parola=parola;
     }
 
     String say(int i) {
