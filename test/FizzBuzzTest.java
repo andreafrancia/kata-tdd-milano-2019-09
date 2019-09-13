@@ -17,7 +17,9 @@ public class FizzBuzzTest {
         if (i == 3) {
             return "fizz";
         }
-
-        return "buzz";
+        if (i == 5) {
+            return "buzz";
+        }
+        return "";
     }
 }
